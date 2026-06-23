@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Libro de Visitas — React</title>
+  <title>Libro de Visitas</title>
   <style>
     body { background:#0D0D0D; color:#fff; font-family:sans-serif;
            display:flex; justify-content:center; padding:3rem; }
@@ -70,7 +70,7 @@
 
       return (
         <div className="tarjeta">
-          <h1>📖 Libro de visitas (React)</h1>
+          <h1>📖 Libro de visitas </h1>
           <input
             placeholder="Tu nombre"
             value={nombre}
@@ -81,7 +81,7 @@
             value={mensaje}
             onChange={(e) => setMensaje(e.target.value)}
           />
-          <button onClick={enviar}>Enviar ✍️</button>
+          <button onClick={enviar}>Enviar</button>
           <div style={{ marginTop: '1.5rem' }}>
             {visitas.map((v, i) =>
               <Visita key={i} nombre={v.nombre} mensaje={v.mensaje} />
